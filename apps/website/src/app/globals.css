@@ -3,6 +3,22 @@
 @import "@unbranded-ds/tokens/dist/css/tokens-light.css";
 @import "@unbranded-ds/tokens/dist/css/tokens-dark.css";
 
+/* ── One Twelve alias bridge ────────────────────────────────────
+   Maps legacy site variable names → token system variables.
+   Components keep using their existing names; this wires them up.
+   ────────────────────────────────────────────────────────────── */
+:root {
+  --color-ink:            var(--color-foreground);
+  --color-chalk:          var(--color-background);
+  --color-surface:        var(--color-muted);
+  --color-accent:         var(--color-primary);
+  --color-accent-hover:   var(--color-primary);
+  --color-accent-subtle:  var(--color-muted);
+  --color-primary-subtle: var(--color-muted);
+  --color-neutral-300:    var(--color-muted-foreground);
+  --color-neutral-500:    var(--color-muted-foreground);
+}
+
 @layer base {
   body {
     @apply bg-background text-foreground;
