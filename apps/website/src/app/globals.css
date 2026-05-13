@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "@unbranded-ds/tokens/dist/tailwind/preset.css";
+@import "@unbranded-ds/tokens/dist/css/tokens-light.css";
+@import "@unbranded-ds/tokens/dist/css/tokens-dark.css";
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}

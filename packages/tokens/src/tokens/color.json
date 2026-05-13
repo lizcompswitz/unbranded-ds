@@ -1,44 +1,54 @@
 {
   "color": {
     "background": {
-      "$value": "oklch(1.0000 0.0000 89.88)",
-      "$type": "color"
+      "$value": "oklch(0.9429 0.0165 91.55)",
+      "$type": "color",
+      "$description": "neutral-100 cream — #F0ECE0"
     },
     "foreground": {
-      "$value": "oklch(0.1408 0.0044 285.82)",
-      "$type": "color"
+      "$value": "oklch(0.2350 0.0000 89.88)",
+      "$type": "color",
+      "$description": "neutral-700 charcoal — #1E1E1E"
     },
     "primary": {
-      "$value": "oklch(0.2103 0.0059 285.89)",
-      "$type": "color"
+      "$value": "oklch(0.5067 0.1638 261.57)",
+      "$type": "color",
+      "$description": "cobalt-500 — #2B5FC1"
     },
     "primary-foreground": {
-      "$value": "oklch(0.9851 0.0000 89.88)",
-      "$type": "color"
+      "$value": "oklch(0.9429 0.0165 91.55)",
+      "$type": "color",
+      "$description": "neutral-100 cream — #F0ECE0"
     },
     "muted": {
-      "$value": "oklch(0.9674 0.0013 286.38)",
-      "$type": "color"
+      "$value": "oklch(0.9582 0.0152 90.24)",
+      "$type": "color",
+      "$description": "neutral-50 off-white — #F5F1E6"
     },
     "muted-foreground": {
-      "$value": "oklch(0.5517 0.0138 285.94)",
-      "$type": "color"
+      "$value": "oklch(0.6367 0.0148 285.97)",
+      "$type": "color",
+      "$description": "neutral-400 muted — #8A8A94"
     },
     "border": {
-      "$value": "oklch(0.9197 0.0040 286.32)",
-      "$type": "color"
+      "$value": "oklch(0.8554 0.0160 86.43)",
+      "$type": "color",
+      "$description": "neutral-200 rule — #D4CFC4"
     },
     "ring": {
-      "$value": "oklch(0.2103 0.0059 285.89)",
-      "$type": "color"
+      "$value": "oklch(0.5067 0.1638 261.57)",
+      "$type": "color",
+      "$description": "cobalt-500 — #2B5FC1"
     },
     "destructive": {
-      "$value": "oklch(0.6368 0.2078 25.33)",
-      "$type": "color"
+      "$value": "oklch(0.5754 0.1959 25.90)",
+      "$type": "color",
+      "$description": "danger-500 — #D43535"
     },
     "destructive-foreground": {
-      "$value": "oklch(0.9851 0.0000 89.88)",
-      "$type": "color"
+      "$value": "oklch(0.9429 0.0165 91.55)",
+      "$type": "color",
+      "$description": "neutral-100 cream — #F0ECE0"
     }
   }
 }
