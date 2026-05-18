@@ -1,42 +1,27 @@
 'use client';
 
-/**
- * Button — thin wrapper around @unbranded-ds/react Button.
- * Maps the website's legacy variant names to DS variant names
- * so all existing call sites work without changes.
- */
-
 import React from 'react';
-import { Button as DSButton } from '@unbranded-ds/react';
-import NextLink from 'next/link';
 import { cn } from '@/lib/utils';
+import NextLink from 'next/link';
 
-export interface ButtonProps {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'accent' | 'ghost' | 'outline';
-  size?: 'sm' | 'md' | 'lg' | 'default';
+  size?: 'sm' | 'md' | 'lg';
   href?: string;
-  className?: string;
-  children?: React.ReactNode;
-  disabled?: boolean;
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
-  style?: React.CSSProperties;
 }
 
-// Map website variant names → DS variant names
-const variantMap = {
-  primary: 'default',
-  accent:  'default',
-  ghost:   'ghost',
-  outline: 'outline',
-} as const;
+const variantMap: Record<NonNullable<ButtonProps['variant']>, string> = {
+  primary: 'bg-[var(--color-cobalt-600)] text-white hover:bg-[var(--color-cobalt-700)]',
+  accent:  'bg-[var(--color-red-500)] text-white hover:bg-[var(--color-red-600)]',
+  ghost:   'bg-transparent text-[var(--color-cobalt-600)] hover:bg-[var(--color-cobalt-50)]',
+  outline: 'border border-[var(--color-cobalt-600)] text-[var(--color-cobalt-600)] bg-transparent hover:bg-[var(--color-cobalt-50)]',
+};
 
-// Map website size names → DS size names
-const sizeMap = {
-  sm:      'sm',
-  md:      'default',
-  lg:      'lg',
-  default: 'default',
-} as const;
+const sizeMap: Record<NonNullable<ButtonProps['size']>, string> = {
+  sm: 'h-7 px-3 text-xs',
+  md: 'h-9 px-5 text-sm',
+  lg: 'h-11 px-7 text-base',
+};
 
 const Button: React.FC<ButtonProps> = ({
   variant = 'primary',
@@ -46,28 +31,26 @@ const Button: React.FC<ButtonProps> = ({
   children,
   ...props
 }) => {
-  const dsVariant = variantMap[variant];
-  const dsSize = sizeMap[size];
+  const classes = cn(
+    'inline-flex items-center justify-center font-semibold rounded-sm cursor-pointer transition-colors duration-150',
+    'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-cobalt-400)]',
+    'disabled:opacity-50 disabled:pointer-events-none',
+    variantMap[variant],
+    sizeMap[size],
+    className
+  );
 
   if (href) {
-    const linkClass = cn(
-      'inline-flex items-center justify-center rounded-md text-sm font-medium transition-all',
-      'bg-primary text-primary-foreground hover:bg-primary/80',
-      dsSize === 'sm' && 'h-8 px-2.5',
-      dsSize === 'default' && 'h-9 px-2.5',
-      dsSize === 'lg' && 'h-10 px-2.5',
-      className,
-    );
     if (href.startsWith('http')) {
-      return <a href={href} className={linkClass} target="_blank" rel="noopener noreferrer">{children}</a>;
+      return <a href={href} className={classes} target="_blank" rel="noopener noreferrer">{children}</a>;
     }
-    return <NextLink href={href} className={linkClass}>{children}</NextLink>;
+    return <NextLink href={href} className={classes}>{children}</NextLink>;
   }
 
   return (
-    <DSButton variant={dsVariant} size={dsSize} className={className} {...props}>
+    <button className={classes} {...props}>
       {children}
-    </DSButton>
+    </button>
   );
 };
 

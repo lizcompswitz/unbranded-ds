@@ -2,10 +2,12 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Nav from '../components/layout/Nav';
 import Footer from '../components/layout/Footer';
-import { Geist } from "next/font/google";
+import { Work_Sans, Fugaz_One, Lora } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const workSans = Work_Sans({ subsets: ['latin'], variable: '--font-ui' });
+const fugazOne = Fugaz_One({ weight: '400', subsets: ['latin'], variable: '--font-display' });
+const lora = Lora({ subsets: ['latin'], variable: '--font-body' });
 
 export const metadata: Metadata = {
   title: 'One Twelve — Track & Field Tools, Journals & Coaching',
@@ -18,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" data-theme="light" className={cn("font-sans", geist.variable)}>
+    <html lang="en" data-theme="one-twelve" className={cn(workSans.variable, fugazOne.variable, lora.variable)}>
       <body className="flex flex-col min-h-screen">
         <Nav />
         <main className="flex-grow">{children}</main>

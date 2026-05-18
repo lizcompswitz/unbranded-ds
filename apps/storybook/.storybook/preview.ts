@@ -4,6 +4,8 @@ import React from "react";
 import "@unbranded-ds/tokens/dist/css/tokens-light.css";
 import "@unbranded-ds/tokens/dist/css/tokens-dark.css";
 import "@unbranded-ds/tokens/dist/css/tokens-brand.css";
+import "@unbranded-ds/tokens/dist/css/tokens-one-twelve.css";
+import "@unbranded-ds/tokens/dist/css/tokens-one-twelve-dark.css";
 import "@unbranded-ds/tokens/dist/tailwind/preset.css";
 import "./styles.css";
 
@@ -18,6 +20,8 @@ const preview: Preview = {
 					{ value: "light", title: "Light" },
 					{ value: "dark", title: "Dark" },
 					{ value: "brand", title: "Brand" },
+					{ value: "one-twelve", title: "One Twelve" },
+					{ value: "one-twelve-dark", title: "One Twelve Dark" },
 				],
 				dynamicTitle: true,
 			},

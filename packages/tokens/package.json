@@ -37,5 +37,11 @@
     "tsx": "^4.21.0",
     "typescript": "^5",
     "vitest": "^3"
+  },
+  "radius": {
+    "sm": { "$value": "0.125rem", "$type": "dimension" },
+    "md": { "$value": "0.1875rem", "$type": "dimension" },
+    "lg": { "$value": "0.25rem", "$type": "dimension" },
+    "full": { "$value": "9999px", "$type": "dimension" }
   }
 }

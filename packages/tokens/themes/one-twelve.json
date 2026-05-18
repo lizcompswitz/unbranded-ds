@@ -1,68 +1,74 @@
 {
   "color": {
     "background": {
-      "$value": "oklch(1.0000 0.0000 89.88)",
+      "$value": "#F0ECE0",
       "$type": "color"
     },
     "foreground": {
-      "$value": "oklch(0.1408 0.0044 285.82)",
+      "$value": "#1E1E1E",
       "$type": "color"
     },
     "primary": {
-      "$value": "oklch(0.2103 0.0059 285.89)",
+      "$value": "#1E4A9E",
       "$type": "color"
     },
     "primary-foreground": {
-      "$value": "oklch(0.9851 0.0000 89.88)",
+      "$value": "#F5F1E6",
       "$type": "color"
     },
     "muted": {
-      "$value": "oklch(0.9674 0.0013 286.38)",
+      "$value": "#F5F1E6",
       "$type": "color"
     },
     "muted-foreground": {
-      "$value": "oklch(0.5517 0.0138 285.94)",
+      "$value": "#8A8A94",
       "$type": "color"
     },
     "border": {
-      "$value": "oklch(0.9197 0.0040 286.32)",
+      "$value": "#D4CFC4",
       "$type": "color"
     },
     "ring": {
-      "$value": "oklch(0.2103 0.0059 285.89)",
+      "$value": "#2B5FC1",
       "$type": "color"
     },
     "destructive": {
-      "$value": "oklch(0.6368 0.2078 25.33)",
+      "$value": "#D43535",
       "$type": "color"
     },
     "destructive-foreground": {
-      "$value": "oklch(0.9851 0.0000 89.88)",
+      "$value": "#F5F1E6",
       "$type": "color"
     },
     "accent": {
-      "$value": "oklch(0.6368 0.2078 25.33)",
+      "$value": "#E8175D",
       "$type": "color"
     },
     "accent-foreground": {
-      "$value": "oklch(0.9851 0.0000 89.88)",
+      "$value": "#F5F1E6",
       "$type": "color"
     },
     "success": {
-      "$value": "oklch(0.5200 0.1400 145.00)",
+      "$value": "#2E7D45",
       "$type": "color"
     },
     "success-foreground": {
-      "$value": "oklch(0.9851 0.0000 89.88)",
+      "$value": "#F5F1E6",
       "$type": "color"
     },
     "warning": {
-      "$value": "oklch(0.7500 0.1600 55.00)",
+      "$value": "#FF6B2C",
       "$type": "color"
     },
     "warning-foreground": {
-      "$value": "oklch(0.9851 0.0000 89.88)",
+      "$value": "#F5F1E6",
       "$type": "color"
     }
+  },
+  "radius": {
+    "sm": { "$value": "0.125rem", "$type": "dimension" },
+    "md": { "$value": "0.1875rem", "$type": "dimension" },
+    "lg": { "$value": "0.25rem", "$type": "dimension" },
+    "full": { "$value": "9999px", "$type": "dimension" }
   }
 }

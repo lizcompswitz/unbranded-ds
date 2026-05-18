@@ -8,6 +8,22 @@
       "$value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
       "$type": "fontFamily"
     },
+    "font-display": {
+      "$value": "\"Fugaz One\", Impact, sans-serif",
+      "$type": "fontFamily"
+    },
+    "font-body": {
+      "$value": "\"Lora\", Georgia, serif",
+      "$type": "fontFamily"
+    },
+    "font-ui": {
+      "$value": "\"Work Sans\", system-ui, sans-serif",
+      "$type": "fontFamily"
+    },
+    "font-brush": {
+      "$value": "\"Nanum Brush Script\", cursive",
+      "$type": "fontFamily"
+    },
     "size-sm": {
       "$value": "0.875rem",
       "$type": "dimension"

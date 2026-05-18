@@ -1,67 +1,67 @@
 {
   "color": {
     "background": {
-      "$value": "oklch(1.0000 0.0000 89.88)",
+      "$value": "#14161F",
       "$type": "color"
     },
     "foreground": {
-      "$value": "oklch(0.1408 0.0044 285.82)",
+      "$value": "#F0ECE0",
       "$type": "color"
     },
     "primary": {
-      "$value": "oklch(0.2103 0.0059 285.89)",
+      "$value": "#5382D1",
       "$type": "color"
     },
     "primary-foreground": {
-      "$value": "oklch(0.9851 0.0000 89.88)",
+      "$value": "#111114",
       "$type": "color"
     },
     "muted": {
-      "$value": "oklch(0.9674 0.0013 286.38)",
+      "$value": "#1E1E1E",
       "$type": "color"
     },
     "muted-foreground": {
-      "$value": "oklch(0.5517 0.0138 285.94)",
+      "$value": "#B0AAA0",
       "$type": "color"
     },
     "border": {
-      "$value": "oklch(0.9197 0.0040 286.32)",
+      "$value": "#3A3A40",
       "$type": "color"
     },
     "ring": {
-      "$value": "oklch(0.2103 0.0059 285.89)",
+      "$value": "#5382D1",
       "$type": "color"
     },
     "destructive": {
-      "$value": "oklch(0.6368 0.2078 25.33)",
+      "$value": "#D44B4B",
       "$type": "color"
     },
     "destructive-foreground": {
-      "$value": "oklch(0.9851 0.0000 89.88)",
+      "$value": "#F5F1E6",
       "$type": "color"
     },
     "accent": {
-      "$value": "oklch(0.6368 0.2078 25.33)",
+      "$value": "#F02870",
       "$type": "color"
     },
     "accent-foreground": {
-      "$value": "oklch(0.9851 0.0000 89.88)",
+      "$value": "#F5F1E6",
       "$type": "color"
     },
     "success": {
-      "$value": "oklch(0.5200 0.1400 145.00)",
+      "$value": "#4EAD66",
       "$type": "color"
     },
     "success-foreground": {
-      "$value": "oklch(0.9851 0.0000 89.88)",
+      "$value": "#111114",
       "$type": "color"
     },
     "warning": {
-      "$value": "oklch(0.7500 0.1600 55.00)",
+      "$value": "#FF8648",
       "$type": "color"
     },
     "warning-foreground": {
-      "$value": "oklch(0.9851 0.0000 89.88)",
+      "$value": "#111114",
       "$type": "color"
     }
   }

@@ -16,6 +16,13 @@ const colorTokens = z.object({
 	ring: z.string(),
 	destructive: z.string(),
 	"destructive-foreground": z.string(),
+	// Extended tokens (optional — not required for base themes)
+	accent: z.string().optional(),
+	"accent-foreground": z.string().optional(),
+	success: z.string().optional(),
+	"success-foreground": z.string().optional(),
+	warning: z.string().optional(),
+	"warning-foreground": z.string().optional(),
 });
 
 const spacingTokens = z.object({
@@ -41,6 +48,11 @@ const spacingTokens = z.object({
 const typographyTokens = z.object({
 	"font-sans": z.string(),
 	"font-mono": z.string(),
+	// Extended font tokens (optional)
+	"font-display": z.string().optional(),
+	"font-body": z.string().optional(),
+	"font-ui": z.string().optional(),
+	"font-brush": z.string().optional(),
 	"size-sm": z.string(),
 	"size-base": z.string(),
 	"size-lg": z.string(),
@@ -122,6 +134,21 @@ export const contrastPairs: ContrastPair[] = [
 	{
 		foreground: "color.destructive-foreground",
 		background: "color.destructive",
+		threshold: 4.5,
+	},
+	{
+		foreground: "color.accent-foreground",
+		background: "color.accent",
+		threshold: 4.5,
+	},
+	{
+		foreground: "color.success-foreground",
+		background: "color.success",
+		threshold: 4.5,
+	},
+	{
+		foreground: "color.warning-foreground",
+		background: "color.warning",
 		threshold: 4.5,
 	},
 ];
