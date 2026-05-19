@@ -21,7 +21,27 @@ StyleDictionary.registerFormat({
 		const lines = dictionary.allTokens.map(
 			(token) => `  ${tokenToCssVar(token)}: var(${tokenToCssVar(token)});`,
 		);
-		return `@theme inline {\n${lines.join("\n")}\n}\n`;
+		// Add font-family shorthand aliases so Tailwind generates font-* utilities
+		const fontAliases = dictionary.allTokens
+			.filter((token) => token.path[0] === "typography" && token.path[1]?.startsWith("font-"))
+			.map((token) => {
+				const shortName = token.path[1]; // e.g. "font-brush"
+				return `  --${shortName}: var(${tokenToCssVar(token)});`;
+			});
+		const allLines = [...lines, ...fontAliases];
+
+		// Base layer: apply heading font tokens to HTML elements
+		const baseLayer = `
+@layer base {
+  h1 { font-family: var(--typography-heading-font-h1); }
+  h2 { font-family: var(--typography-heading-font-h2); }
+  h3 { font-family: var(--typography-heading-font-h3); }
+  h4 { font-family: var(--typography-heading-font-h4); }
+  h5 { font-family: var(--typography-heading-font-h5); }
+  h6 { font-family: var(--typography-heading-font-h6); }
+}`;
+
+		return `@theme inline {\n${allLines.join("\n")}\n}\n${baseLayer}\n`;
 	},
 });
 

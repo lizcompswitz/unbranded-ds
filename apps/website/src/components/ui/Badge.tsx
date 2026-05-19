@@ -10,13 +10,13 @@ interface BadgeProps {
 }
 
 const variantStyles: Record<BadgeVariant, string> = {
-  default:  'bg-[var(--color-neutral-100)] text-[var(--color-neutral-700)]',
-  accent:   'bg-[var(--color-red-50)] text-[var(--color-red-600)]',
-  primary:  'bg-[var(--color-cobalt-50)] text-[var(--color-cobalt-700)]',
-  success:  'bg-[var(--color-green-50)] text-[var(--color-green-700)]',
-  warning:  'bg-[var(--color-warning-50)] text-[var(--color-warning-700)]',
-  danger:   'bg-[var(--color-red-50)] text-[var(--color-red-700)]',
-  outline:  'border border-current bg-transparent text-[var(--color-neutral-700)]',
+  default:  'bg-muted text-foreground',
+  accent:   'bg-accent/10 text-accent',
+  primary:  'bg-primary/10 text-primary',
+  success:  'bg-success/10 text-success',
+  warning:  'bg-warning/10 text-warning',
+  danger:   'bg-destructive/10 text-destructive',
+  outline:  'border border-current bg-transparent text-foreground',
 };
 
 const Badge: React.FC<BadgeProps> = ({ label, variant = 'default', className }) => {

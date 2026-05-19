@@ -9,19 +9,43 @@
       "$type": "fontFamily"
     },
     "font-display": {
-      "$value": "\"Fugaz One\", Impact, sans-serif",
-      "$type": "fontFamily"
-    },
-    "font-body": {
-      "$value": "\"Lora\", Georgia, serif",
+      "$value": ["Fugaz One", "Impact", "sans-serif"],
       "$type": "fontFamily"
     },
     "font-ui": {
-      "$value": "\"Work Sans\", system-ui, sans-serif",
+      "$value": ["Lora", "Georgia", "serif"],
+      "$type": "fontFamily"
+    },
+    "font-body": {
+      "$value": ["Work Sans", "system-ui", "sans-serif"],
       "$type": "fontFamily"
     },
     "font-brush": {
-      "$value": "\"Nanum Brush Script\", cursive",
+      "$value": ["Nanum Brush Script", "cursive"],
+      "$type": "fontFamily"
+    },
+    "heading-font-h1": {
+      "$value": "{typography.font-display}",
+      "$type": "fontFamily"
+    },
+    "heading-font-h2": {
+      "$value": "{typography.font-display}",
+      "$type": "fontFamily"
+    },
+    "heading-font-h3": {
+      "$value": "{typography.font-ui}",
+      "$type": "fontFamily"
+    },
+    "heading-font-h4": {
+      "$value": "{typography.font-ui}",
+      "$type": "fontFamily"
+    },
+    "heading-font-h5": {
+      "$value": "{typography.font-ui}",
+      "$type": "fontFamily"
+    },
+    "heading-font-h6": {
+      "$value": "{typography.font-ui}",
       "$type": "fontFamily"
     },
     "size-sm": {

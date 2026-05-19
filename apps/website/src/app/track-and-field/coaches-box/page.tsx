@@ -18,22 +18,22 @@ const features = [
 
 export default function CoachesBoxPage() {
   return (
-    <div className="bg-[var(--color-background)]">
+    <div className="bg-background">
 
       {/* Hero */}
-      <section className="bg-[var(--color-ink)] text-[var(--color-chalk)]">
+      <section className="bg-foreground text-background">
         <Container style={{ paddingBlock: 'var(--section-py)' }} className="flex flex-col gap-6">
           <Badge label="App · T&F Tools" variant="primary" />
-          <h1 className="font-[var(--font-display)] leading-tight" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}>
+          <h1 className="font-display leading-tight" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}>
             Coaches Box
           </h1>
-          <p className="font-[var(--font-body)] text-lg text-[var(--color-neutral-300)] max-w-xl leading-relaxed">
+          <p className="font-body text-lg text-muted-foreground max-w-xl leading-relaxed">
             A digital home for track and field coaches. Build programs, track athletes,
             set goals, and evolve your system — all in one place.
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
             <Button variant="primary" size="lg">Get Early Access</Button>
-            <Button variant="ghost" size="lg" style={{ color: 'var(--color-chalk)' }}>Learn More</Button>
+            <Button variant="ghost" size="lg" className="text-background">Learn More</Button>
           </div>
         </Container>
       </section>
@@ -41,10 +41,10 @@ export default function CoachesBoxPage() {
       {/* Features */}
       <section style={{ paddingBlock: 'var(--section-py)' }}>
         <Container>
-          <span className="font-[var(--font-ui)] text-xs font-semibold uppercase tracking-widest text-[var(--color-accent)]">
+          <span className="font-ui text-xs font-semibold uppercase tracking-widest text-accent">
             Features
           </span>
-          <h2 className="font-[var(--font-display)] text-4xl text-[var(--color-ink)] mt-2 mb-12">
+          <h2 className="font-display text-4xl text-foreground mt-2 mb-12">
             Everything a coach needs
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -60,11 +60,11 @@ export default function CoachesBoxPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[var(--color-primary-subtle)]" style={{ paddingBlock: 'clamp(3rem, 6vw, 5rem)' }}>
+      <section className="bg-primary/10" style={{ paddingBlock: 'clamp(3rem, 6vw, 5rem)' }}>
         <Container className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
-            <h3 className="font-[var(--font-display)] text-3xl text-[var(--color-ink)]">Built for coaches who take their craft seriously.</h3>
-            <p className="text-[var(--color-muted-foreground)] mt-1">Join the waitlist for early access.</p>
+            <h3 className="font-display text-3xl text-foreground">Built for coaches who take their craft seriously.</h3>
+            <p className="text-muted-foreground mt-1">Join the waitlist for early access.</p>
           </div>
           <Button variant="primary" size="lg">Join the Waitlist</Button>
         </Container>

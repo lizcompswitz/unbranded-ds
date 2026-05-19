@@ -11,10 +11,10 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 }
 
 const variantMap: Record<NonNullable<ButtonProps['variant']>, string> = {
-  primary: 'bg-[var(--color-cobalt-600)] text-white hover:bg-[var(--color-cobalt-700)]',
-  accent:  'bg-[var(--color-red-500)] text-white hover:bg-[var(--color-red-600)]',
-  ghost:   'bg-transparent text-[var(--color-cobalt-600)] hover:bg-[var(--color-cobalt-50)]',
-  outline: 'border border-[var(--color-cobalt-600)] text-[var(--color-cobalt-600)] bg-transparent hover:bg-[var(--color-cobalt-50)]',
+  primary: 'bg-primary text-primary-foreground hover:bg-primary/80',
+  accent:  'bg-accent text-accent-foreground hover:bg-accent/80',
+  ghost:   'bg-transparent text-primary hover:bg-muted',
+  outline: 'border border-primary text-primary bg-transparent hover:bg-muted',
 };
 
 const sizeMap: Record<NonNullable<ButtonProps['size']>, string> = {
@@ -32,9 +32,9 @@ const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const classes = cn(
-    'inline-flex items-center justify-center font-semibold rounded-sm cursor-pointer transition-colors duration-150',
-    'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-cobalt-400)]',
-    'disabled:opacity-50 disabled:pointer-events-none',
+    'inline-flex items-center justify-center font-semibold rounded-md cursor-pointer transition-colors duration-150',
+    'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
+    'disabled:opacity-disabled disabled:pointer-events-none',
     variantMap[variant],
     sizeMap[size],
     className

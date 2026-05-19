@@ -17,16 +17,16 @@ const features = [
 
 export default function DepartSmartPage() {
   return (
-    <div className="bg-[var(--color-background)]">
+    <div className="bg-background">
 
       {/* Hero */}
-      <section className="bg-[var(--color-ink)] text-[var(--color-chalk)]">
+      <section className="bg-foreground text-background">
         <Container style={{ paddingBlock: 'var(--section-py)' }} className="flex flex-col gap-6">
           <Badge label="Free Tool · T&F Tools" variant="accent" />
-          <h1 className="font-[var(--font-display)] leading-tight" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}>
+          <h1 className="font-display leading-tight" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}>
             DepartSmart
           </h1>
-          <p className="font-[var(--font-body)] text-lg text-[var(--color-neutral-300)] max-w-xl leading-relaxed">
+          <p className="font-body text-lg text-muted-foreground max-w-xl leading-relaxed">
             Meet-day logistics, simplified. DepartSmart helps track and field teams
             plan departures, organize heats, and build athlete schedules — for free.
           </p>
@@ -39,17 +39,17 @@ export default function DepartSmartPage() {
       {/* Features */}
       <section style={{ paddingBlock: 'var(--section-py)' }}>
         <Container>
-          <span className="font-[var(--font-ui)] text-xs font-semibold uppercase tracking-widest text-[var(--color-accent)]">
+          <span className="font-ui text-xs font-semibold uppercase tracking-widest text-accent">
             What It Does
           </span>
-          <h2 className="font-[var(--font-display)] text-4xl text-[var(--color-ink)] mt-2 mb-12">
+          <h2 className="font-display text-4xl text-foreground mt-2 mb-12">
             Less chaos, more racing
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {features.map((f) => (
-              <div key={f.label} className="flex flex-col gap-2 p-6 border border-[var(--color-border)] rounded-sm">
-                <h3 className="font-[var(--font-display)] text-xl text-[var(--color-ink)]">{f.label}</h3>
-                <p className="text-[var(--color-muted-foreground)] text-sm leading-relaxed">{f.description}</p>
+              <div key={f.label} className="flex flex-col gap-2 p-6 border border-border rounded-sm">
+                <h3 className="font-display text-xl text-foreground">{f.label}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{f.description}</p>
               </div>
             ))}
           </div>
@@ -57,11 +57,11 @@ export default function DepartSmartPage() {
       </section>
 
       {/* Free CTA */}
-      <section className="bg-[var(--color-accent-subtle)]" style={{ paddingBlock: 'clamp(3rem, 6vw, 5rem)' }}>
+      <section className="bg-accent/10" style={{ paddingBlock: 'clamp(3rem, 6vw, 5rem)' }}>
         <Container className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
-            <h3 className="font-[var(--font-display)] text-3xl text-[var(--color-ink)]">It&apos;s free. No catch.</h3>
-            <p className="text-[var(--color-muted-foreground)] mt-1">We built it because we needed it. Now it&apos;s yours too.</p>
+            <h3 className="font-display text-3xl text-foreground">It&apos;s free. No catch.</h3>
+            <p className="text-muted-foreground mt-1">We built it because we needed it. Now it&apos;s yours too.</p>
           </div>
           <Button variant="accent" size="lg">Launch the Tool</Button>
         </Container>

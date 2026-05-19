@@ -5,21 +5,21 @@ import Container from '../ui/Container';
 const MissionSection: React.FC = () => {
   return (
     <section
-      className="bg-[var(--color-ink)]"
+      className="bg-foreground"
       style={{ paddingBlock: 'var(--section-py)' }}
     >
       <Container>
         <div className="max-w-2xl flex flex-col gap-6">
-          <span className="font-[var(--font-ui)] text-xs font-semibold uppercase tracking-[0.25em] text-[var(--color-accent)]">
+          <span className="font-ui text-xs font-semibold uppercase tracking-[0.25em] text-accent">
             Why 112.
           </span>
           <h2
-            className="font-[var(--font-display)] leading-none text-[var(--color-chalk)]"
+            className="font-display leading-none text-background"
             style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}
           >
             Built by a coach,<br />for coaches.
           </h2>
-          <p className="font-[var(--font-body)] text-lg text-[var(--color-neutral-300)] leading-relaxed">
+          <p className="font-body text-lg text-muted-foreground leading-relaxed">
             One twelve started as a number on a pole vault standard. It became a philosophy —
             precise, purposeful, always improving. Every tool and journal we build carries
             that standard.
@@ -27,7 +27,7 @@ const MissionSection: React.FC = () => {
           <div className="pt-2">
             <NextLink
               href="/about"
-              className="inline-flex items-center gap-2 border border-[var(--color-chalk)] text-[var(--color-chalk)] px-6 py-3 font-[var(--font-ui)] text-sm font-semibold rounded-sm hover:bg-white/10 transition-colors"
+              className="inline-flex items-center gap-2 border border-background text-background px-6 py-3 font-ui text-sm font-semibold rounded-sm hover:bg-white/10 transition-colors"
             >
               Our story →
             </NextLink>

@@ -32,17 +32,17 @@ const productCategories = [
 const ProductCategorySection: React.FC = () => {
   return (
     <section
-      className="bg-[var(--color-background)] border-t border-[var(--color-border)]"
+      className="bg-background border-t border-border"
       style={{ paddingBlock: 'var(--section-py)' }}
     >
       <Container>
         {/* Header */}
         <div className="mb-14">
-          <span className="font-[var(--font-ui)] text-xs font-semibold uppercase tracking-widest text-[var(--color-accent)]">
+          <span className="font-ui text-xs font-semibold uppercase tracking-widest text-accent">
             What We Build
           </span>
           <h2
-            className="font-[var(--font-display)] text-[var(--color-ink)] mt-2"
+            className="font-display text-foreground mt-2"
             style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)', lineHeight: 1 }}
           >
             Products &amp; Tools

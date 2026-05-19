@@ -28,16 +28,16 @@ const offerings = [
 
 export default function CoachingAndCampsPage() {
   return (
-    <div className="bg-[var(--color-background)]">
+    <div className="bg-background">
 
       {/* Hero */}
-      <section className="bg-[var(--color-ink)] text-[var(--color-chalk)]">
+      <section className="bg-foreground text-background">
         <Container style={{ paddingBlock: 'var(--section-py)' }} className="flex flex-col gap-6">
           <Badge label="Coaching & Camps" variant="accent" />
-          <h1 className="font-[var(--font-display)] leading-tight" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}>
+          <h1 className="font-display leading-tight" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}>
             Coaching &amp; Camps
           </h1>
-          <p className="font-[var(--font-body)] text-lg text-[var(--color-neutral-300)] max-w-xl leading-relaxed">
+          <p className="font-body text-lg text-muted-foreground max-w-xl leading-relaxed">
             Skill development, technical coaching, and immersive camps for track and field athletes
             who want to get serious about their craft.
           </p>
@@ -50,18 +50,18 @@ export default function CoachingAndCampsPage() {
       {/* Offerings */}
       <section style={{ paddingBlock: 'var(--section-py)' }}>
         <Container>
-          <span className="font-[var(--font-ui)] text-xs font-semibold uppercase tracking-widest text-[var(--color-accent)]">
+          <span className="font-ui text-xs font-semibold uppercase tracking-widest text-accent">
             What We Offer
           </span>
-          <h2 className="font-[var(--font-display)] text-4xl text-[var(--color-ink)] mt-2 mb-12">
+          <h2 className="font-display text-4xl text-foreground mt-2 mb-12">
             Built around athlete growth
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {offerings.map((o) => (
-              <div key={o.label} className="flex flex-col gap-3 p-6 border border-[var(--color-border)] rounded-sm">
+              <div key={o.label} className="flex flex-col gap-3 p-6 border border-border rounded-sm">
                 <Badge label={o.badge} variant="primary" />
-                <h3 className="font-[var(--font-display)] text-xl text-[var(--color-ink)]">{o.label}</h3>
-                <p className="text-[var(--color-muted-foreground)] text-sm leading-relaxed">{o.description}</p>
+                <h3 className="font-display text-xl text-foreground">{o.label}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{o.description}</p>
               </div>
             ))}
           </div>
@@ -69,13 +69,13 @@ export default function CoachingAndCampsPage() {
       </section>
 
       {/* Contact CTA */}
-      <section className="bg-[var(--color-primary-subtle)]" style={{ paddingBlock: 'clamp(3rem, 6vw, 5rem)' }}>
+      <section className="bg-primary/10" style={{ paddingBlock: 'clamp(3rem, 6vw, 5rem)' }}>
         <Container className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
-            <h3 className="font-[var(--font-display)] text-3xl text-[var(--color-ink)]">Interested in working together?</h3>
-            <p className="text-[var(--color-muted-foreground)] mt-1">
+            <h3 className="font-display text-3xl text-foreground">Interested in working together?</h3>
+            <p className="text-muted-foreground mt-1">
               Reach out at{' '}
-              <a href="mailto:liz@onetwelve.com" className="text-[var(--color-primary)] hover:underline">
+              <a href="mailto:liz@onetwelve.com" className="text-primary hover:underline">
                 liz@onetwelve.com
               </a>
             </p>
