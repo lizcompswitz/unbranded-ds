@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../../../components/ui/Button';
 import Badge from '../../../components/ui/Badge';
-import Container from '../../../components/ui/Container';
+import { Container, Section } from '@unbranded-ds/react';
 
 export const metadata = {
   title: 'DepartSmart — One Twelve',
@@ -20,8 +20,8 @@ export default function DepartSmartPage() {
     <div className="bg-background">
 
       {/* Hero */}
-      <section className="bg-foreground text-background">
-        <Container style={{ paddingBlock: 'var(--section-py)' }} className="flex flex-col gap-6">
+      <Section className="bg-foreground text-background">
+        <Container className="flex flex-col gap-6">
           <Badge label="Free Tool · T&F Tools" variant="accent" />
           <h1 className="font-display leading-tight" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}>
             DepartSmart
@@ -34,10 +34,10 @@ export default function DepartSmartPage() {
             <Button variant="accent" size="lg">Use DepartSmart Free</Button>
           </div>
         </Container>
-      </section>
+      </Section>
 
       {/* Features */}
-      <section style={{ paddingBlock: 'var(--section-py)' }}>
+      <Section>
         <Container>
           <span className="font-ui text-xs font-semibold uppercase tracking-widest text-accent">
             What It Does
@@ -54,10 +54,10 @@ export default function DepartSmartPage() {
             ))}
           </div>
         </Container>
-      </section>
+      </Section>
 
       {/* Free CTA */}
-      <section className="bg-accent/10" style={{ paddingBlock: 'clamp(3rem, 6vw, 5rem)' }}>
+      <Section className="bg-accent/10" style={{ paddingBlock: 'clamp(3rem, 6vw, 5rem)' }}>
         <Container className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <h3 className="font-display text-3xl text-foreground">It&apos;s free. No catch.</h3>
@@ -65,7 +65,7 @@ export default function DepartSmartPage() {
           </div>
           <Button variant="accent" size="lg">Launch the Tool</Button>
         </Container>
-      </section>
+      </Section>
 
     </div>
   );

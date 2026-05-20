@@ -1,6 +1,6 @@
 import React from 'react';
 import NextLink from 'next/link';
-import Container from '../ui/Container';
+import { Container } from '@unbranded-ds/react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();

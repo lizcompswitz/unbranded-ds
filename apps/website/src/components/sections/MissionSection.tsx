@@ -1,13 +1,10 @@
 import React from 'react';
 import NextLink from 'next/link';
-import Container from '../ui/Container';
+import { Container, Section } from '@unbranded-ds/react';
 
 const MissionSection: React.FC = () => {
   return (
-    <section
-      className="bg-foreground"
-      style={{ paddingBlock: 'var(--section-py)' }}
-    >
+    <Section className="bg-foreground">
       <Container>
         <div className="max-w-2xl flex flex-col gap-6">
           <span className="font-ui text-xs font-semibold uppercase tracking-[0.25em] text-accent">
@@ -34,7 +31,7 @@ const MissionSection: React.FC = () => {
           </div>
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };
 

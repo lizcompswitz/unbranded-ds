@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../../components/ui/Button';
-import Container from '../../components/ui/Container';
+import { Container, Section } from '@unbranded-ds/react';
 
 export const metadata = {
   title: 'About — One Twelve',
@@ -12,8 +12,8 @@ export default function AboutPage() {
     <div className="bg-background">
 
       {/* Hero */}
-      <section className="bg-foreground text-background">
-        <Container style={{ paddingBlock: 'var(--section-py)' }} className="flex flex-col gap-6">
+      <Section className="bg-foreground text-background">
+        <Container className="flex flex-col gap-6">
           <span className="font-brush text-5xl text-accent">112</span>
           <h1 className="font-display leading-tight" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}>
             About One Twelve
@@ -23,10 +23,10 @@ export default function AboutPage() {
             believes the sport deserves better tools, better products, and better experiences.
           </p>
         </Container>
-      </section>
+      </Section>
 
       {/* The Name */}
-      <section className="border-b border-border" style={{ paddingBlock: 'var(--section-py)' }}>
+      <Section className="border-b border-border">
         <Container className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="flex flex-col gap-4">
             <span className="font-ui text-xs font-semibold uppercase tracking-widest text-accent">
@@ -48,10 +48,10 @@ export default function AboutPage() {
             </span>
           </div>
         </Container>
-      </section>
+      </Section>
 
       {/* Mission */}
-      <section className="bg-muted" style={{ paddingBlock: 'var(--section-py)' }}>
+      <Section className="bg-muted">
         <Container>
           <span className="font-ui text-xs font-semibold uppercase tracking-widest text-accent">
             Mission
@@ -65,10 +65,10 @@ export default function AboutPage() {
             Every product and tool at One Twelve starts from that belief.
           </p>
         </Container>
-      </section>
+      </Section>
 
       {/* Contact */}
-      <section style={{ paddingBlock: 'clamp(3rem, 6vw, 5rem)' }}>
+      <Section style={{ paddingBlock: 'clamp(3rem, 6vw, 5rem)' }}>
         <Container className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <h3 className="font-display text-3xl text-foreground">Want to connect?</h3>
@@ -81,7 +81,7 @@ export default function AboutPage() {
           </div>
           <Button variant="primary" size="lg">Say Hello</Button>
         </Container>
-      </section>
+      </Section>
 
     </div>
   );

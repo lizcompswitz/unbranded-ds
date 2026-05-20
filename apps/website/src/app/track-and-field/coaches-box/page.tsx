@@ -1,8 +1,8 @@
 import React from 'react';
 import Button from '../../../components/ui/Button';
 import Badge from '../../../components/ui/Badge';
-import Container from '../../../components/ui/Container';
 import Card from '../../../components/ui/Card';
+import { Container, Section } from '@unbranded-ds/react';
 
 export const metadata = {
   title: 'Coaches Box — One Twelve',
@@ -21,8 +21,8 @@ export default function CoachesBoxPage() {
     <div className="bg-background">
 
       {/* Hero */}
-      <section className="bg-foreground text-background">
-        <Container style={{ paddingBlock: 'var(--section-py)' }} className="flex flex-col gap-6">
+      <Section className="bg-foreground text-background">
+        <Container className="flex flex-col gap-6">
           <Badge label="App · T&F Tools" variant="primary" />
           <h1 className="font-display leading-tight" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}>
             Coaches Box
@@ -36,10 +36,10 @@ export default function CoachesBoxPage() {
             <Button variant="ghost" size="lg" className="text-background">Learn More</Button>
           </div>
         </Container>
-      </section>
+      </Section>
 
       {/* Features */}
-      <section style={{ paddingBlock: 'var(--section-py)' }}>
+      <Section>
         <Container>
           <span className="font-ui text-xs font-semibold uppercase tracking-widest text-accent">
             Features
@@ -57,10 +57,10 @@ export default function CoachesBoxPage() {
             ))}
           </div>
         </Container>
-      </section>
+      </Section>
 
       {/* CTA */}
-      <section className="bg-primary/10" style={{ paddingBlock: 'clamp(3rem, 6vw, 5rem)' }}>
+      <Section className="bg-primary/10" style={{ paddingBlock: 'clamp(3rem, 6vw, 5rem)' }}>
         <Container className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <h3 className="font-display text-3xl text-foreground">Built for coaches who take their craft seriously.</h3>
@@ -68,7 +68,7 @@ export default function CoachesBoxPage() {
           </div>
           <Button variant="primary" size="lg">Join the Waitlist</Button>
         </Container>
-      </section>
+      </Section>
 
     </div>
   );

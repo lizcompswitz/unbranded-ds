@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../../components/ui/Button';
 import Badge from '../../components/ui/Badge';
-import Container from '../../components/ui/Container';
+import { Container, Section } from '@unbranded-ds/react';
 
 export const metadata = {
   title: 'Pole Vault Logbook — One Twelve',
@@ -20,8 +20,8 @@ export default function JournalsPage() {
     <div className="bg-background">
 
       {/* Hero */}
-      <section className="bg-foreground text-background">
-        <Container style={{ paddingBlock: 'var(--section-py)' }} className="flex flex-col gap-6">
+      <Section className="bg-foreground text-background">
+        <Container className="flex flex-col gap-6">
           <Badge label="Journal · Published 2020" variant="accent" />
           <h1 className="font-display leading-tight" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}>
             Pole Vault Logbook
@@ -34,10 +34,10 @@ export default function JournalsPage() {
             <Button variant="accent" size="lg">Buy the Logbook</Button>
           </div>
         </Container>
-      </section>
+      </Section>
 
       {/* Features */}
-      <section style={{ paddingBlock: 'var(--section-py)' }}>
+      <Section>
         <Container>
           <span className="font-ui text-xs font-semibold uppercase tracking-widest text-accent">
             What&apos;s Inside
@@ -54,10 +54,10 @@ export default function JournalsPage() {
             ))}
           </div>
         </Container>
-      </section>
+      </Section>
 
       {/* CTA Banner */}
-      <section className="bg-primary/10" style={{ paddingBlock: 'clamp(3rem, 6vw, 5rem)' }}>
+      <Section className="bg-primary/10" style={{ paddingBlock: 'clamp(3rem, 6vw, 5rem)' }}>
         <Container className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <h3 className="font-display text-3xl text-foreground">Ready to start logging?</h3>
@@ -65,7 +65,7 @@ export default function JournalsPage() {
           </div>
           <Button variant="primary" size="lg">Order Now</Button>
         </Container>
-      </section>
+      </Section>
 
     </div>
   );

@@ -1,5 +1,7 @@
 // Components
 export * from "./components/Button";
+export * from "./components/Container";
+export * from "./components/Section";
 export * from "./components/Input";
 export * from "./components/Label";
 export * from "./components/Card";

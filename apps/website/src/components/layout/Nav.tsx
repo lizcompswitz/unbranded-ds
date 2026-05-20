@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import NextLink from 'next/link';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import Container from '../ui/Container';
+import { Container } from '@unbranded-ds/react';
 
 const navLinks = [
   {

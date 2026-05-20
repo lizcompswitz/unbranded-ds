@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from '../ui/Container';
+import { Container, Section } from '@unbranded-ds/react';
 import Card from '../ui/Card';
 
 const productCategories = [
@@ -31,10 +31,7 @@ const productCategories = [
 
 const ProductCategorySection: React.FC = () => {
   return (
-    <section
-      className="bg-background border-t border-border"
-      style={{ paddingBlock: 'var(--section-py)' }}
-    >
+    <Section className="bg-background border-t border-border">
       <Container>
         {/* Header */}
         <div className="mb-14">
@@ -63,7 +60,7 @@ const ProductCategorySection: React.FC = () => {
           ))}
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };
 

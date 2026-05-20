@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../../components/ui/Button';
 import Badge from '../../components/ui/Badge';
-import Container from '../../components/ui/Container';
+import { Container, Section } from '@unbranded-ds/react';
 
 export const metadata = {
   title: 'Coaching & Camps — One Twelve',
@@ -31,8 +31,8 @@ export default function CoachingAndCampsPage() {
     <div className="bg-background">
 
       {/* Hero */}
-      <section className="bg-foreground text-background">
-        <Container style={{ paddingBlock: 'var(--section-py)' }} className="flex flex-col gap-6">
+      <Section className="bg-foreground text-background">
+        <Container className="flex flex-col gap-6">
           <Badge label="Coaching & Camps" variant="accent" />
           <h1 className="font-display leading-tight" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}>
             Coaching &amp; Camps
@@ -45,10 +45,10 @@ export default function CoachingAndCampsPage() {
             <Button variant="accent" size="lg">Get in Touch</Button>
           </div>
         </Container>
-      </section>
+      </Section>
 
       {/* Offerings */}
-      <section style={{ paddingBlock: 'var(--section-py)' }}>
+      <Section>
         <Container>
           <span className="font-ui text-xs font-semibold uppercase tracking-widest text-accent">
             What We Offer
@@ -66,10 +66,10 @@ export default function CoachingAndCampsPage() {
             ))}
           </div>
         </Container>
-      </section>
+      </Section>
 
       {/* Contact CTA */}
-      <section className="bg-primary/10" style={{ paddingBlock: 'clamp(3rem, 6vw, 5rem)' }}>
+      <Section className="bg-primary/10" style={{ paddingBlock: 'clamp(3rem, 6vw, 5rem)' }}>
         <Container className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <h3 className="font-display text-3xl text-foreground">Interested in working together?</h3>
@@ -82,7 +82,7 @@ export default function CoachingAndCampsPage() {
           </div>
           <Button variant="primary" size="lg">Contact Liz</Button>
         </Container>
-      </section>
+      </Section>
 
     </div>
   );

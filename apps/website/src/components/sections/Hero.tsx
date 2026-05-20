@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from '../ui/Container';
+import { Container } from '@unbranded-ds/react';
 import Button from '../ui/Button';
 
 const Hero: React.FC = () => {
@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
 
         {/* CTAs */}
         <div className="flex flex-wrap gap-4 pt-2">
-          <Button variant="accent" size="lg" href="/track-and-field/coaches-box">
+          <Button variant="primary" size="lg" href="/track-and-field/coaches-box">
             Explore Coaches Box
           </Button>
           <Button variant="outline" size="lg" href="/journals" className="border-background text-background hover:bg-white/10">
